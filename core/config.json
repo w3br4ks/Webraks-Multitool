@@ -1,0 +1,10 @@
+{
+  "name": "Webraks Multitool",
+  "version": "2.7.1",
+  "author": "gih",
+  "github": "https://github.com/glockinhand",
+  "discord": "https://t.me/w3br4ks",
+  "theme": "modern",
+  "auto_open_discord": true,
+  "auto_update": true
+}
