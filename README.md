@@ -65,10 +65,6 @@
   <img src="https://(https://ibb.co/4bqWp95).gif" alt="Modern UI Preview" width="80%">
 </p>
 
-<p align="center">
-  <img src="https://i.ibb.co/b5KZnZL0/ezgif-470aa4e7ae5d5dec.gif" alt="Function Preview" width="80%">
-</p>
-
 ---
 
 ## 🛠️ Installation
