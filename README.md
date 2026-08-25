@@ -60,9 +60,9 @@
 ---
 
 ## 📸 Interface Preview
-https://ibb.co/4bqWp95
+
 <p align="center">
-  <img src="https://https://ibb.co/4bqWp95/preview.gif" alt="Modern UI Preview" width="80%">
+  <img src="https://https://ibb.co/4bqWp95/" alt="Modern UI Preview" width="80%">
 </p>
 
 ---
