@@ -1,7 +1,5 @@
 # <p align="center"> Webraks Multitool</p>
 
-  </a>
-</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.1.0-0078D4?style=for-the-badge&logo=github" alt="Version">
@@ -9,8 +7,6 @@
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-blue?style=for-the-badge&logo=windows" alt="Platform">
 
 ---
-
-## ⚡ Core Features
 
 ### 💬 Discord Operations
 *   **Webhook Suite**: High-speed **Spammer** and instant **Deleter** for webhook management.
