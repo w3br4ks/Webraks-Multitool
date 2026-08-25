@@ -4,7 +4,7 @@
 #  \ V  V / | |___| |_) |  _ <  / ___ \| . \ ___) |
 #   \_/\_/  |_____|____/|_| \_\/_/   \_\_|\_\____/ 
 # 
-# Navi Multitool - Developed by webraks
+# Webraks Multitool - Developed by webraks
 # GitHub: https://github.com/w3br4ks/webraks-multitool
 
 import sys, time, subprocess, json, os, threading, zipfile, io, shutil
@@ -18,13 +18,16 @@ _init()
 
 from core.display import Colors, Colorate, System, boot_anim, print_banner, menu_opts, get_inpt, init_os, get_config, Theme, matrix_effect, clr
 from modules.discord_tools import webhook_spam, webhook_delete, id_to_token, server_info_lookup, nitro_generator, bot_invite_gen
-from modules.network import do_port_check
 from modules.crypto import CryptXer, make_pw
 from modules.sysinfo import get_sys_data
-from modules.osint import whois_lookup, dns_lookup
 from modules.malicious import mail_bomb
 from modules.obfuscator import obfuscator_init
 from modules.metadata import metadata_init
+from modules.network.ip_changer import ip_changer_menu
+from modules.network.mac_changer import mac_changer_menu
+from modules.network.spoofer import spoofer_menu
+from modules.network.port_scanner import port_scanner_menu
+from modules.osint.subdomain_enum import subdomain_menu
 
 def cfg_mgr():
     from core.paginated_ui import PaginatedUI
@@ -35,7 +38,7 @@ def cfg_mgr():
 
         au_status = "[ENABLED]" if _cfg.get("auto_update", True) else "[DISABLED]"
         dp_status = "[ENABLED]" if _cfg.get("auto_open_discord", True) else "[DISABLED]"
-        active_theme = _cfg.get("theme", "blue").upper()
+        active_theme = _cfg.get("theme", "red").upper()
 
         box_w = PaginatedUI.get_layout_width()
         inner = box_w - 2
@@ -75,7 +78,7 @@ def cfg_mgr():
             _ln = ""
             plain_ln = ""
             for _k, _v in _tl[_i:_i+3]:
-                v_disp = f"{_v} ✓" if _v.lower().replace(" ", "_") == _cfg.get("theme", "blue").lower() else _v
+                v_disp = f"{_v} ✓" if _v.lower().replace(" ", "_") == _cfg.get("theme", "red").lower() else _v
                 slot = f"  [{_k}] {v_disp}"
                 slot_padded = f"{slot:<{col_w}}"
                 _ln += Colorate.Horizontal(_cl["num"], f"  [{_k}] ") + Colorate.Horizontal(_cl["txt"], f"{v_disp:<{col_w - len(f'  [{_k}] ')}}") 
@@ -122,7 +125,7 @@ def cfg_mgr():
 
         _c = get_inpt("webraks@config:~#")
         if _c in [str(_x) for _x in range(1, 13)]:
-            _tm = {"1":"blue","2":"red","3":"purple","4":"green","5":"yellow","6":"pink","7":"cyan","8":"gray","9":"rainbow","10":"modern","11":"modern_red","12":"modern_purple"}[_c]
+            _tm = {"1":"red","2":"red","3":"purple","4":"green","5":"yellow","6":"pink","7":"cyan","8":"gray","9":"rainbow","10":"modern","11":"modern_red","12":"modern_purple"}[_c]
             try:
                 with open("core/config.json", "r") as _f: _d = json.load(_f)
                 _d["theme"] = _tm
@@ -179,7 +182,7 @@ def _pre():
     if _cfg.get("auto_update"):
         try:
             import requests
-            _r = requests.get("https://raw.githubusercontent.com/glockinhand/webraks-multitool/main/core/config.json", timeout=5)
+            _r = requests.get("https://raw.githubusercontent.com/w3br4ks/webraks-multitool/main/core/config.json", timeout=5)
             if _r.status_code == 200:
                 _rv = _r.json().get("version", "1.0.0")
                 
@@ -189,7 +192,7 @@ def _pre():
                 
                 if parse_v(_rv) > parse_v(_cfg.get("version", "1.0.0")):
                     print(Colorate.Horizontal(_cl["num"], f"\n  [!] New Version Detected: {_rv}"))
-                    _url = "https://github.com/glockinhand/webraks-multitool/archive/refs/heads/main.zip"
+                    _url = "https://github.com/w3br4ks/webraks-multitool/archive/refs/heads/main.zip"
                     _res = requests.get(_url, stream=True)
                     _dl, _ts = 0, int(_res.headers.get('content-length', 500000))
                     _io = io.BytesIO()
@@ -232,7 +235,7 @@ def _nbot_ui():
     
     default_config = {
         "BOT_TOKEN": "",
-        "MESSAGE_CONTENT": "@everyone | Server Nuked | discord.gg/4qUD63pnPy | https://github.com/glockinhand/webraks-multitool",
+        "MESSAGE_CONTENT": "@everyone | Server Nuked | t.me/w3br4ks | https://github.com/w3br4ks/webraks-multitool",
         "WEBHOOK_URL": "This webhook for tracking your nukes",
         "GUILD_NEW_NAME": "webraks owns this",
         "CHANNEL_AMOUNT": 60,
@@ -244,7 +247,7 @@ def _nbot_ui():
         "TOTAL_WEBHOOKS": 2000,
         "WEBHOOK_DELAY": 0.06,
         "SPAM_EMOJIS": ["🏴", "🌙", "🔥", "💀", "👾"],
-        "WEBHOOK_USERNAME": "Navi Runs Cord",
+        "WEBHOOK_USERNAME": "Webraks Runs Cord",
         "COMMAND_PREFIX": "."
     }
     
@@ -455,6 +458,12 @@ def run_app():
         elif _c == "17":
             from modules.osint import email_lookup_init
             email_lookup_init()
+        elif _c == "18":
+            from modules.network.mac_changer import mac_changer_menu
+            mac_changer_menu()
+        elif _c == "19":
+            from modules.network.spoofer import spoofer_menu
+            spoofer_menu()
 
 
         elif _c == '20': mail_bomb(get_inpt("email:"), int(get_inpt("amt:") or 10)); input("\n  Enter...")
@@ -481,6 +490,9 @@ def run_app():
         elif _c == '28':
             from modules.wallet_scanner import wallet_scanner_init
             wallet_scanner_init()
+        elif _c == "29":
+            from modules.network.ip_changer import ip_changer_menu
+            ip_changer_menu()
         elif _c == '30':
             _m, _t = get_inpt("(E/D):").upper(), get_inpt("Text:")
             try: print(Colorate.Horizontal(_cl["head"], f"  Res: {CryptXer.b64_e(_t) if _m == 'E' else CryptXer.b64_d(_t)}"))
@@ -498,6 +510,9 @@ def run_app():
         elif _c == '34':
             from modules.network import clone_website
             clone_website(get_inpt("URL to clone:"))
+        elif _c == "36":
+            from modules.osint.subdomain_enum import subdomain_menu
+            subdomain_menu()
         elif _c == '40':
             from modules.roblox import roblox_user_info
             roblox_user_info()

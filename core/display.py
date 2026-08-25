@@ -40,7 +40,7 @@ class Colorate:
     @staticmethod
     def Horizontal(color, text, *args, **kwargs):
         cfg = get_config()
-        if cfg.get("theme", "blue").lower() == "rainbow":
+        if cfg.get("theme", "red").lower() == "rainbow":
             return pystyle.Colorate.Horizontal(pystyle.Colors.rainbow, text, *args, **kwargs)
         if isinstance(color, str):
             return f"{color}{text}{pystyle.Colors.reset}"
@@ -49,15 +49,15 @@ class Colorate:
     @staticmethod
     def Vertical(color, text, *args, **kwargs):
         cfg = get_config()
-        if cfg.get("theme", "blue").lower() == "rainbow":
+        if cfg.get("theme", "red").lower() == "rainbow":
             return pystyle.Colorate.Vertical(pystyle.Colors.rainbow, text, *args, **kwargs)
         return pystyle.Colorate.Vertical(color, text, *args, **kwargs)
 
 class Theme:
     @staticmethod
     def get_colors():
-        c = get_config().get("theme", "blue").lower()
-        t = THEMES.get(c, THEMES["blue"])
+        c = get_config().get("theme", "red").lower()
+        t = THEMES.get(c, THEMES["red"])
         return {
             "banner": t["banner"],
             "head": t["head"],
@@ -69,9 +69,9 @@ class Theme:
 
     @staticmethod
     def get_matrix_color():
-        c = get_config().get("theme", "blue").lower()
+        c = get_config().get("theme", "red").lower()
         if c == "rainbow": return -1
-        m = {"red":196,"purple":93,"green":46,"yellow":226,"pink":201,"cyan":51,"gray":245,"blue":27, "modern_red":196, "modern_purple":93}
+        m = {"red":196,"purple":93,"green":46,"yellow":226,"pink":201,"cyan":51,"gray":245,"red":27, "modern_red":196, "modern_purple":93}
         return m.get(c, 27)
 
 def clr():
@@ -240,7 +240,7 @@ def matrix_effect(cycles=1, color_id=27):
 
 def print_banner():
     cfg = get_config()
-    if cfg.get("theme", "blue").lower().startswith("modern"):
+    if cfg.get("theme", "red").lower().startswith("modern"):
         return ModernUI.print_banner(Colorate, Theme, clr)
     clr()
     cols = Theme.get_colors()

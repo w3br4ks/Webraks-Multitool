@@ -4,8 +4,8 @@
 #  \ V  V / | |___| |_) |  _ <  / ___ \| . \ ___) |
 #   \_/\_/  |_____|____/|_| \_\/_/   \_\_|\_\____/ 
 # 
-# Webraks Multitool - Developed by onlyweow
-# GitHub: https://github.com/onlyweow/webraks-multitool
+# Webraks Multitool - Developed by w3br4ks
+# GitHub: https://github.com/w3br4ks/webraks-multitool
 
 import os
 import sys
@@ -45,7 +45,10 @@ PAGES = [
             ("14", "Dox Tracker", "Lookup dox information database"),
             ("15", "Dox Creator", "Create custom doxing profiles"),
             ("16", "Phone Lookup", "Lookup carrier and location of phone numbers"),
-            ("17", "Email Lookup", "Retrieve OSINT data associated with emails")
+            ("17", "Email Lookup", "Retrieve OSINT data associated with emails"),
+            ("18", "Mac Changer", "Change MAC address (Random/Custom"),
+            ("19", "Spoofer" , "Mask network interface MAC"),
+            ("36", "Subdomain Enum" , "Enumerate subdomains via crt.sh"),
         ]
     },
     {
@@ -60,7 +63,8 @@ PAGES = [
             ("25", "Keylogger Builder", "Build stealth keystroke logging applications"),
             ("26", "IP Grabber", "Generate tracking links to log visitor IPs"),
             ("27", "Rat Builder", "Build Remote Access Trojan stubs"),
-            ("28", "Wallet Bruteforce", "Bruteforce mnemonic phrases for crypto wallets")
+            ("28", "Wallet Bruteforce", "Bruteforce mnemonic phrases for crypto wallets"),
+            ("29", "IP Changer" , "Automatic Tor IP rotator"),
         ]
     },
     {

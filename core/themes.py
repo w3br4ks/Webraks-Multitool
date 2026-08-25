@@ -10,11 +10,11 @@
 from pystyle import Colors
 
 THEMES = {
-    "blue": {
-        "banner": Colors.white_to_blue,
+    "red": {
+        "banner": Colors.white_to_red,
         "head": Colors.blue_to_cyan,
         "num": Colors.cyan_to_blue,
-        "txt": Colors.white_to_blue,
+        "txt": Colors.white_to_red,
         "sub": Colors.blue_to_cyan,
         "inp": Colors.blue_to_cyan
     },
@@ -27,12 +27,12 @@ THEMES = {
         "inp": Colors.white_to_red
     },
     "purple": {
-        "banner": Colors.blue_to_purple,
-        "head": Colors.purple_to_blue,
-        "num": Colors.purple_to_blue,
+        "banner": Colors.red_to_purple,
+        "head": Colors.purple_to_red,
+        "num": Colors.purple_to_red,
         "txt": Colors.white,
-        "sub": Colors.purple_to_blue,
-        "inp": Colors.purple_to_blue
+        "sub": Colors.purple_to_red,
+        "inp": Colors.purple_to_red
     },
     "green": {
         "banner": Colors.green_to_white,
@@ -53,7 +53,7 @@ THEMES = {
     "pink": {
         "banner": Colors.purple_to_red,
         "head": Colors.red_to_purple,
-        "num": Colors.purple_to_blue,
+        "num": Colors.purple_to_red,
         "txt": Colors.white,
         "sub": Colors.pink,
         "inp": Colors.pink
@@ -83,12 +83,12 @@ THEMES = {
         "inp": Colors.rainbow
     },
     "modern": {
-        "banner": Colors.white_to_blue,
+        "banner": Colors.white_to_red,
         "head": Colors.white,
-        "num": Colors.white_to_blue,
+        "num": Colors.white_to_red,
         "txt": Colors.white,
-        "sub": Colors.white_to_blue,
-        "inp": Colors.white_to_blue
+        "sub": Colors.white_to_red,
+        "inp": Colors.white_to_red
     },
     "modern_red": {
         "banner": Colors.white_to_red,
@@ -99,11 +99,11 @@ THEMES = {
         "inp": Colors.white_to_red
     },
     "modern_purple": {
-        "banner": Colors.blue_to_purple,
+        "banner": Colors.red_to_purple,
         "head": Colors.white,
-        "num": Colors.blue_to_purple,
+        "num": Colors.red_to_purple,
         "txt": Colors.white,
-        "sub": Colors.blue_to_purple,
-        "inp": Colors.blue_to_purple
+        "sub": Colors.red_to_purple,
+        "inp": Colors.red_to_purple
     }
 }
