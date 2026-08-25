@@ -62,7 +62,9 @@
 ## 📸 Interface Preview
 
 <p align="center">
-  <img src="https://i.ibb.co/QWg9Mz1/Ekran-g-r-nt-s-2026-08-25-021421.png" alt="Modern UI Preview" width="80%">
+  <img src="https://i.ibb.co/QWg9Mz1/Ekran-g-r-nt-s-2026-08-25-021421.png" alt="UI Preview 1" width="80%">
+  <br><br>
+  <img src="https://i.ibb.co/BVrWYXSg/Ekran-g-r-nt-s-2026-08-25-040420.png" alt="UI Preview 2" width="80%">
 </p>
 ---
 
