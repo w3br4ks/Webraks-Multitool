@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-2.7.0-0078D4?style=for-the-badge&logo=github" alt="Version">
+  <img src="https://img.shields.io/badge/Version-1.1.0-0078D4?style=for-the-badge&logo=github" alt="Version">
   <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-blue?style=for-the-badge&logo=windows" alt="Platform">
 
@@ -62,9 +62,9 @@
 ## 📸 Interface Preview
 
 <p align="center">
-  <img src="https://i.ibb.co/QWg9Mz1/Ekran-g-r-nt-s-2026-08-25-021421.png" alt="UI Preview 1" width="80%">
+  <img src="https://i.ibb.co/ccc6LXg1/Ekran-g-r-nt-s-2026-08-26-020809.png" alt="UI Preview 1" width="80%">
   <br><br>
-  <img src="https://i.ibb.co/BVrWYXSg/Ekran-g-r-nt-s-2026-08-25-040420.png" alt="UI Preview 2" width="80%">
+  <img src="https://i.ibb.co/N2CJ4ynX/Ekran-g-r-nt-s-2026-08-26-020700.png" alt="UI Preview 2" width="80%">
 </p>
 ---
 
