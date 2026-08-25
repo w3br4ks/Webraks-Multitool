@@ -64,9 +64,8 @@
 ## 📸 Interface Preview
 
 <p align="center">
-  <a href="https://ibb.co/4bqWp95"><img src="https://i.ibb.co/QWg9Mz1/Ekran-g-r-nt-s-2026-08-25-021421.png" alt="Modern UI Preview" width="80%"></a>
+  <img src="https://i.ibb.co/QWg9Mz1/Ekran-g-r-nt-s-2026-08-25-021421.png" alt="Modern UI Preview" width="80%">
 </p>
-
 ---
 
 ## 🛠️ Installation
