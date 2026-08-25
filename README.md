@@ -1,3 +1,5 @@
+<img width="1858" height="511" alt="Ekran görüntüsü 2026-08-25 021421" src="https://github.com/user-attachments/assets/89a83613-bb28-4d84-8adf-940b266b8f76" />
+<img width="1858" height="511" alt="Ekran görüntüsü 2026-08-25 021421" src="https://github.com/user-attachments/assets/ce964599-ec93-46ba-81e3-e80877ea906c" />
 # <p align="center"> Webraks Multitool</p>
 
 <p align="center">
@@ -62,7 +64,7 @@
 ## 📸 Interface Preview
 
 <p align="center">
-  <img src="https://(https://ibb.co/4bqWp95)" alt="Modern UI Preview" width="80%">
+  <img src="https://ibb.co/4bqWp95/" alt="Modern UI Preview" width="80%">
 </p>
 
 ---
