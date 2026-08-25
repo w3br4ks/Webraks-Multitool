@@ -14,7 +14,7 @@
 
 ## ⚡ Core Features
 
-### 📡 Discord Operations
+### 💬 Discord Operations
 *   **Webhook Suite**: High-speed **Spammer** and instant **Deleter** for webhook management.
 *   **Account Suite**: 
     *   **Token Tools**: Info extractor, Nuker, Login automator, and Status rotator.
@@ -32,6 +32,8 @@
     *   **Lookup Suite**: Global Phone Number and Email Address tracking.
     *   **Metadata Scan**: Deep analysis of file metadata (Exif, etc.).
 *   **IP Tools**: Advanced **IP Grabber** and high-frequency **Pinger**.
+*   **MAC Tools**: Random/Custom **MAC Changer** and network interface masker **Spoofer**
+*   **Subdomain Enum**: Enumerate subdomains via crt.sh.
 
 ### 💀 Exploitation & Builders
 *   **Multi-Builder GUI**: A centralized interface for generating custom stubs:
@@ -43,6 +45,7 @@
     *   **Email Bomber**: High-volume mail stress testing.
     *   **DDoS Protocol**: Integrated Layer 4 and Layer 7 attack simulations.
     *   **SQL Scanner**: Automated vulnerability detection.
+    *   **IP Changer**: Changes your IP in seconds.
 
 ### 🛡️ Security & Utilities
 *   **Obfuscator V2**: Professional-grade Python obfuscation with XOR encryption and Anti-Print protection.
@@ -50,7 +53,7 @@
 *   **Cryptography**: Base64 Codec and high-entropy Password Generator.
 *   **QR Generator**: Custom QR code creation for payloads or links.
 
-### 🎮 Game Suite (Roblox)
+### 🎮 Roblox :)
 *   **Intel**: Detailed User, Cookie, and Group information extractors.
 *   **Control**: Automated Cookie Login and high-speed Asset Downloader.
 
