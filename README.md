@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-blue?style=for-the-badge&logo=windows" alt="Platform">
   
 
-### 👑 Features
+### 👑 **Features**
 
 ---
 
