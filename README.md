@@ -9,11 +9,6 @@
   <img src="https://img.shields.io/badge/Version-2.7.0-0078D4?style=for-the-badge&logo=github" alt="Version">
   <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-blue?style=for-the-badge&logo=windows" alt="Platform">
-</p>
-
-<p align="center">
-  <b>Navi</b> is a premium, high-performance terminal multitool designed for efficiency, security testing, and OSINT exploration. Featuring a state-of-the-art <b>Modern UI</b> and a vast array of specialized modules.
-</p>
 
 ---
 
@@ -67,26 +62,12 @@
 ## 📸 Interface Preview
 
 <p align="center">
-  <img src="https://i.ibb.co/mCPvQWt9/ezgif-43009de2c03d4907.gif" alt="Modern UI Preview" width="80%">
+  <img src="https://(https://ibb.co/4bqWp95).gif" alt="Modern UI Preview" width="80%">
 </p>
 
 <p align="center">
   <img src="https://i.ibb.co/b5KZnZL0/ezgif-470aa4e7ae5d5dec.gif" alt="Function Preview" width="80%">
 </p>
-
----
-
-## 🎨 Professional Themes
-Navi offers a variety of themes to suit your aesthetic, including the new **Modern** series:
-
-<p align="center">
-  <img src="https://i.ibb.co/35hcVSy4/image1.png" width="24%" />
-  <img src="https://i.ibb.co/kVQCnQBz/image.png" width="24%" />
-  <img src="https://i.ibb.co/1YVCYYGM/image.png" width="24%" />
-  <img src="https://i.ibb.co/KjB7zKRm/image.png" width="24%" />
-</p>
-
-`Modern` | `Modern Red` | `Modern Purple` | `Rainbow` | `Blue` | `Red` | `Purple` | `Green` | `Yellow`
 
 ---
 
