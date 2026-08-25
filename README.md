@@ -1,15 +1,8 @@
-# <p align="center">🛸 Navi Multitool</p>
+# <p align="center"> Webraks Multitool</p>
 
 <p align="center">
-  <a href="https://discord.gg/DFNP2VJKPW">
-    <img src="https://img.shields.io/badge/Join%20our%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server">
+
   </a>
-</p>
-<p align="center"><b>🚀 Join our community Discord for the latest Updates, suggestions, and support!</b></p>
-
-
-<p align="center">
-  <img src="https://i.ibb.co/kg0R2k2H/image.png" alt="Navi Banner" width="100%">
 </p>
 
 <p align="center">
@@ -127,9 +120,8 @@ This tool is developed for **educational and ethical security testing purposes o
 ---
 
 ## 🔗 Stay Connected
-- **Main Developer**: [glockinhand](https://github.com/glockinhand)
-- **Community Discord**: [Join the Server](https://discord.com/invite/4DFNP2VJKPW)
+- **Main Developer**:(https://github.com/w3br4ks)
 
 <p align="center">
-  <i>"Present Day, Present Time... Hahaha!"</i>
+  <i>   </>
 </p>
