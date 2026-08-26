@@ -65,6 +65,7 @@ PAGES = [
             ("27", "Rat Builder", "Build Remote Access Trojan stubs"),
             ("28", "Wallet Bruteforce", "Bruteforce mnemonic phrases for crypto wallets"),
             ("29", "IP Changer" , "Automatic Tor IP rotator"),
+            ("37", "WPS Attacker" , "Crack the target networks password with WPS"),
         ]
     },
     {

@@ -43,6 +43,7 @@
     *   **DDoS Protocol**: Integrated Layer 4 and Layer 7 attack simulations.
     *   **SQL Scanner**: Automated vulnerability detection.
     *   **IP Changer**: Changes your IP in seconds.
+    *   **WPS Attacker**: Crack the target networks password with WPS
 
 ### 🛡️ Security & Utilities
 *   **Obfuscator V2**: Professional-grade Python obfuscation with XOR encryption and Anti-Print protection.
@@ -98,7 +99,7 @@ This tool is developed for **educational and ethical security testing purposes o
 ---
 
 ## 🔗 Stay Connected
-- **Main Developer**:(https://github.com/w3br4ks)
+- **Main Developer** :(https://github.com/w3br4ks)
 
 <p align="center">
   <i>   </>

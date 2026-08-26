@@ -28,6 +28,7 @@ from modules.network.mac_changer import mac_changer_menu
 from modules.network.spoofer import spoofer_menu
 from modules.network.port_scanner import port_scanner_menu
 from modules.osint.subdomain_enum import subdomain_menu
+from modules.network import wps_attacker
 
 def cfg_mgr():
     from core.paginated_ui import PaginatedUI
@@ -513,6 +514,8 @@ def run_app():
         elif _c == "36":
             from modules.osint.subdomain_enum import subdomain_menu
             subdomain_menu()
+        elif choice == "37":
+            wps_attacker.main()
         elif _c == '40':
             from modules.roblox import roblox_user_info
             roblox_user_info()
