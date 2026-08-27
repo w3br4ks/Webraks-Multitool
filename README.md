@@ -1,6 +1,6 @@
 # <p align="center"> **Webraks Multitool**</p>
 
-<img src="https://i.ibb.co/7xz3bNd3/dd258597-bfec-49de-b0eb-7378cdc78265.png" alt="UI Preview 1" width="70%">
+<img src="https://i.ibb.co/7qRW37g/dd258597-bfec-49de-b0eb-7378cdc78265.png" alt="UI Preview 1" width="80%">
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.2.0-0078D4?style=for-the-badge&logo=github" alt="Version">
