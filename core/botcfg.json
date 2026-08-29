@@ -1,6 +1,6 @@
 {
   "BOT_TOKEN": "",
-  "MESSAGE_CONTENT": "@everyone | Server Nuked | discord.gg/4qUD63pnPy | https://github.com/glockinhand/webraks-multitool",
+  "MESSAGE_CONTENT": "@everyone | Server Nuked | t.me/w3br4ks | https://github.com/w3br4ks/webraks-multitool",
   "WEBHOOK_URL": "This webhook for tracking your nukes",
   "GUILD_NEW_NAME": "webraks owns this",
   "CHANNEL_AMOUNT": 60,
@@ -18,6 +18,6 @@
     "\ud83d\udc80",
     "\ud83d\udc7e"
   ],
-  "WEBHOOK_USERNAME": "Navi Runs Cord",
+  "WEBHOOK_USERNAME": "Webraks Runs Cord",
   "COMMAND_PREFIX": "."
 }
