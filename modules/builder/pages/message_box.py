@@ -1,10 +1,3 @@
-from PyQt5.QtWidgets import (
-    QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
-    QLabel, QPushButton, QFrame
-)
-from PyQt5.QtCore import Qt, QPoint
-from PyQt5.QtGui import QFont, QIcon
-from ..styles import MAIN_STYLE, TOPBAR_STYLE, close_btn_style
 
 
 class CustomMessageBox(QMainWindow):

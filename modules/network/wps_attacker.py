@@ -1,10 +1,3 @@
-import sys, subprocess, os, tempfile, shutil, re, codecs, socket, pathlib, time, collections, statistics, collections, csv, http.client
-from time import sleep 
-from datetime import datetime
-from typing import Dict
-
-os.system('clear')
-
 now = datetime.now()
 now_time = str(now.strftime("%d:%m:%Y - %H:%M:%S"))
 def ani(z):

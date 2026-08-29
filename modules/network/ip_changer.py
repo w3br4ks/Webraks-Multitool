@@ -1,10 +1,3 @@
-import os
-import time
-import subprocess
-
-def get_current_ip():
-    try:
-        # curl kullanarak timeout ve sessiz mod ile IP çekme
         cmd = "curl -s --max-time 5 https://api.ipify.org || curl -s --max-time 5 https://ifconfig.me"
         output = subprocess.check_output(cmd, shell=True).decode('utf-8').strip()
         return output if output else "IP Could Not Be Fetched"

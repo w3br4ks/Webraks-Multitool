@@ -1,10 +1,3 @@
-import socket
-import concurrent.futures
-from datetime import datetime
-
-# En çok kullanılan kritik portlar ve servis isimleri
-COMMON_PORTS = {
-    21: "FTP",
     22: "SSH",
     23: "Telnet",
     25: "SMTP",

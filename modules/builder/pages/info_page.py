@@ -1,10 +1,3 @@
-from PyQt5.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QLabel, QFrame, QScrollArea
-)
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QFont, QPixmap
-from ..styles import SCROLL_STYLE
-
 class InfoPage(QWidget):
     def __init__(self):
         super().__init__()

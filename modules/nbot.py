@@ -1,12 +1,5 @@
-#  _   _                 _ 
-# | \ | |               (_)
-# |  \| | __ ___   __ _  _ 
-# | . ` |/ _` \ \ / /(_)| |
-# | |\  | (_| |\ V /  _ | |
-# |_| \_|\__,_| \_/  (_)|_|
-# 
-# Navi Multitool - Developed by glockinhand
-# GitHub: https://github.com/glockinhand/webraks-multitool
+# Webraks Multitool - Developed by w3br4ks
+# GitHub: https://github.com/w3br4ks/webraks-multitool
 
 import asyncio
 import discord
@@ -20,7 +13,7 @@ config_path = "core/botcfg.json"
 if not os.path.exists(config_path):
     default_config = {
         "BOT_TOKEN": "",
-        "MESSAGE_CONTENT": "@everyone | Server owned | discord.gg/4qUD63pnPy | https://github.com/glockinhand/webraks-multitool",
+        "MESSAGE_CONTENT": "@everyone | Server owned | discord.gg/4qUD63pnPy | https://github.com/w3br4ks/webraks-multitool",
         "WEBHOOK_URL": "Your webhook URL for notifications",
         "GUILD_NEW_NAME": "webraks owns this",
         "CHANNEL_AMOUNT": 60,
@@ -32,7 +25,7 @@ if not os.path.exists(config_path):
         "TOTAL_WEBHOOKS": 2000,
         "WEBHOOK_DELAY": 0.06,
         "SPAM_EMOJIS": ["🏴", "🌙", "🔥", "💀", "👾"],
-        "WEBHOOK_USERNAME": "Navi Cord",
+        "WEBHOOK_USERNAME": "Webraks Cord",
         "COMMAND_PREFIX": "."
     }
     os.makedirs("core", exist_ok=True)

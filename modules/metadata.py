@@ -1,12 +1,5 @@
-#  _   _                 _ 
-# | \ | |               (_)
-# |  \| | __ ___   __ _  _ 
-# | . ` |/ _` \ \ / /(_)| |
-# | |\  | (_| |\ V /  _ | |
-# |_| \_|\__,_| \_/  (_)|_|
-# 
-# Navi Multitool - Developed by glockinhand
-# GitHub: https://github.com/glockinhand/webraks-multitool
+# Webraks Multitool - Developed by w3br4ks
+# GitHub: https://github.com/w3br4ks/webraks-multitool
 
 import os, sys, time, json, hashlib, re, zlib, base64, stat, struct
 from core.display import Colorate, Theme, get_inpt, print_banner

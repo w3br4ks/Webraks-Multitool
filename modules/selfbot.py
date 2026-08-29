@@ -1,12 +1,5 @@
-#  _   _                 _ 
-# | \ | |               (_)
-# |  \| | __ ___   __ _  _ 
-# | . ` |/ _` \ \ / /(_)| |
-# | |\  | (_| |\ V /  _ | |
-# |_| \_|\__,_| \_/  (_)|_|
-# 
-# Navi Multitool - Developed by glockinhand
-# GitHub: https://github.com/glockinhand/webraks-multitool
+# Webraks Multitool - Developed by w3br4ks
+# GitHub: https://github.com/w3br4ks/webraks-multitool
 
 import json, os, re, random, threading, time
 import requests, websocket
@@ -19,7 +12,7 @@ os.makedirs(_LOGDIR, exist_ok=True)
 os.makedirs("core",  exist_ok=True)
 
 
-class NaviSelfbot:
+class WebraksSelfbot:
     def __init__(self, token):
         self.token   = token
         self.headers = {
@@ -475,7 +468,7 @@ def selfbot_menu():
     cl = Theme.get_colors()
     print_banner()
     tk = get_inpt("Token:")
-    bot = NaviSelfbot(tk)
+    bot = WebraksSelfbot(tk)
     if not bot.fetch_user():
         print(Colorate.Horizontal(cl["num"], "  [!] Invalid Token."))
         time.sleep(2)

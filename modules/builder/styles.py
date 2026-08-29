@@ -1,10 +1,3 @@
-MAIN_STYLE = """
-    QWidget {
-        background-color: #0a0a1a;
-        color: #e0e0e0;
-        font-family: 'Segoe UI';
-    }
-    QPushButton {
         background-color: transparent;
         border: none;
         color: #bbb;

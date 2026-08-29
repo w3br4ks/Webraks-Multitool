@@ -1,10 +1,3 @@
-import os, requests, random, threading, time
-from core.display import Colors, Colorate, get_inpt, Theme
-
-class Console():        
-    def ui(self):
-        pass
-
     def printer(self, color, status, code):
         cl = Theme.get_colors()
         with threading.Lock():

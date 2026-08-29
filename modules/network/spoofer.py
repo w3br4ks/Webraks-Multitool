@@ -1,10 +1,3 @@
-import os
-import re
-import subprocess
-import time
-
-VENDORS = {
-    "1": ("Apple", "00:1C:B3"),
     "2": ("Cisco", "00:40:0B"),
     "3": ("Intel", "00:13:E8"),
     "4": ("Samsung", "00:26:37"),

@@ -1,10 +1,3 @@
-from PyQt5.QtWidgets import QLabel, QVBoxLayout, QWidget, QGraphicsOpacityEffect
-from PyQt5.QtGui import QFont, QPixmap
-from PyQt5.QtCore import Qt, QPropertyAnimation, QEasingCurve, QTimer, pyqtSignal
-
-class SplashScreen(QWidget):
-    finished = pyqtSignal()
-    def __init__(self):
         super().__init__()
         self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
         self.setAttribute(Qt.WA_TranslucentBackground)

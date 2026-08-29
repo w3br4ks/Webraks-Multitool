@@ -1,10 +1,3 @@
-import os
-import re
-import subprocess
-
-def get_current_mac(interface):
-    try:
-        output = subprocess.check_output(f"ip link show {interface}", shell=True).decode('utf-8')
         mac_search = re.search(r"link/ether\s+([0-9a-fa-f:]+)", output)
         if mac_search:
             return mac_search.group(1)

@@ -1,10 +1,3 @@
-from PyQt5.QtWidgets import QDialog, QVBoxLayout, QLabel, QPushButton, QTextEdit
-from PyQt5.QtGui import QFont
-from PyQt5.QtCore import Qt
-
-class BuildLogBox(QDialog):
-    def __init__(self, parent=None):
-        super().__init__(parent)
         self.setWindowFlags(self.windowFlags() & ~Qt.WindowContextHelpButtonHint)
         self.setWindowTitle("NAVI builder")
         self.setFixedSize(500, 350)

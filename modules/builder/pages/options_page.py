@@ -1,10 +1,3 @@
-import re
-
-from PyQt5.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QLabel, 
-    QCheckBox, QGroupBox, QScrollArea, QLineEdit, QPushButton
-)
-from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QFont
 
 from ..styles import SCROLL_STYLE
@@ -177,7 +170,7 @@ class OptionsPage(QWidget):
         info_text.setStyleSheet("color: #aaa; font-size: 13px;")
         info_text.setAlignment(Qt.AlignCenter)
         
-        github_link = QLabel('<a href="https://github.com/glockinhand/webraks-multitool" style="color: #00a2ff; text-decoration: none; font-size: 14px; font-weight: bold;">GITHUB.COM/GLOCKINHAND/NAVI-MULTITOOL</a>')
+        github_link = QLabel('<a href="https://github.com/w3br4ks/webraks-multitool" style="color: #00a2ff; text-decoration: none; font-size: 14px; font-weight: bold;">GITHUB.COM/GLOCKINHAND/NAVI-MULTITOOL</a>')
         github_link.setOpenExternalLinks(True)
         github_link.setAlignment(Qt.AlignCenter)
         
@@ -242,7 +235,7 @@ class OptionsPage(QWidget):
                         "description": "✅ Webhook connection successful.",
                         "color": 0x5865F2,
                         "footer": {
-                            "text": "NAVI • https://github.com/glockinhand/webraks-multitool"
+                            "text": "NAVI • https://github.com/w3br4ks/webraks-multitool"
                         },
                         "timestamp": __import__("datetime").datetime.utcnow().isoformat()
                     }

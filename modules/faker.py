@@ -1,12 +1,5 @@
-#  _   _                 _ 
-# | \ | |               (_)
-# |  \| | __ ___   __ _  _ 
-# | . ` |/ _` \ \ / /(_)| |
-# | |\  | (_| |\ V /  _ | |
-# |_| \_|\__,_| \_/  (_)|_|
-# 
-# Navi Multitool - Developed by glockinhand
-# GitHub: https://github.com/glockinhand/webraks-multitool
+# Webraks Multitool - Developed by w3br4ks
+# GitHub: https://github.com/w3br4ks/webraks-multitool
 
 import time, random, string, threading, os, base64, re, requests, json
 from pystyle import Colors, Center, System
@@ -14,7 +7,7 @@ from core.display import Colorate, get_inpt, Theme, print_banner
 
 def _cls(title):
     os.system('cls' if os.name == 'nt' else 'clear')
-    System.Title(f"Navi - {title}")
+    System.Title(f"Webraks - {title}")
 
 def fake_token_gen():
     _cls("Token Generator")
@@ -71,7 +64,7 @@ critic draw oak hood reward bunker next old spy about clown notice
 
 -------------------------------
 [!] Keep in mind that this is a larp. You are not able to move the funds.
-[!] Navi Multitool - Faker mode
+[!] Webraks Multitool - Faker mode
 """
     
     path = "output/exodus_seed.txt"
@@ -419,7 +412,7 @@ def fake_bruteforcer():
     print("\n" + "─" * 60)
     print(Colorate.Horizontal(cl["head"], f"  [!] BRUTEFORCE STATUS: {Colorate.Horizontal(cl['txt'], 'IN PROGRESS...')}"))
     print(Colorate.Horizontal(cl["head"], f"  [!] NOTICE: {Colorate.Horizontal(cl['txt'], 'Bruteforcing passwords this will take time, but the engine is bypasssing 2FA and Rate-limits.')}"))
-    print(Colorate.Horizontal(cl["head"], f"  [!] INFO: {Colorate.Horizontal(cl['txt'], 'Navi Multitool - Advanced Simulation Engine.')}"))
+    print(Colorate.Horizontal(cl["head"], f"  [!] INFO: {Colorate.Horizontal(cl['txt'], 'Webraks Multitool - Advanced Simulation Engine.')}"))
     print("─" * 60)
     
     input(Colorate.Horizontal(cl["head"], "\n  Press Enter..."))

@@ -1,10 +1,3 @@
-import asyncio
-import aiohttp
-import random
-import string
-import time
-import os
-from urllib.parse import quote
 from core.display import Theme, Colorate, clr, get_inpt
 
 SHIT_NIGGA_API = "https://auth.roblox.com/v1/usernames/validate?username={}&birthday=2000-01-01"

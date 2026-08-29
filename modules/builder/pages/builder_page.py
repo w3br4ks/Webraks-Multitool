@@ -1,10 +1,3 @@
-from PyQt5.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QLabel,
-    QLineEdit, QComboBox, QPushButton, QFileDialog
-)
-from PyQt5.QtCore import Qt, pyqtSignal, QThread
-from PyQt5.QtGui import QFont
-from .build_box import BuildLogBox
 from .message_box import CustomMessageBox
 from ..functions.build_manager import BuildManager
 import os

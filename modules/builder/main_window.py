@@ -1,10 +1,3 @@
-from PyQt5.QtWidgets import (
-    QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
-    QLabel, QPushButton, QFrame, QStackedWidget, QGraphicsOpacityEffect
-)
-from PyQt5.QtCore import Qt, QPoint, QPropertyAnimation, QEasingCurve
-from PyQt5.QtGui import QFont, QIcon, QPixmap
-from .styles import MAIN_STYLE, SIDEBAR_STYLE, TOPBAR_STYLE, close_btn_style
 from .pages.options_page import OptionsPage
 from .pages.builder_page import BuilderPage
 from .pages.info_page import InfoPage
@@ -163,7 +156,7 @@ class MainWindow(QMainWindow):
         side_layout.addWidget(self.btn_info)
         side_layout.addStretch()
         
-        footer = QLabel('<a href="https://github.com/glockinhand/webraks-multitool" style="color: #888; text-decoration: none; font-size: 10px;">Navi Multitool</a>')
+        footer = QLabel('<a href="https://github.com/w3br4ks/webraks-multitool" style="color: #888; text-decoration: none; font-size: 10px;">Webraks Multitool</a>')
         footer.setOpenExternalLinks(True)
         footer.setAlignment(Qt.AlignCenter)
         side_layout.addWidget(footer)

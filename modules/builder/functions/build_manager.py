@@ -1,10 +1,3 @@
-import os
-import subprocess
-import shutil
-
-class BuildManager:
-    @staticmethod
-    def buildFinal(compress, webhook_url, selected_payloads, file_name, file_type, file_icon_path, telegram_config, log):
         try:
             log("NAVI: initializing build...")
             

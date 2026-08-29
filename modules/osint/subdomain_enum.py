@@ -1,10 +1,3 @@
-import socket
-import requests
-import json
-import concurrent.futures
-
-# Active Enum için temel wordlist
-DEFAULT_SUBDOMAINS = [
     "admin", "mail", "dev", "test", "api", "staging", "blog", 
     "webmail", "server", "portal", "ns1", "ns2", "smtp", "vpn",
     "shop", "cpanel", "autodiscover", "m", "direct", "ftp"

